@@ -93,7 +93,7 @@ void part1() {
 
     auto scores = tl::views::getlines(in)
         | std::views::transform(calculate_score_part1);
-    std::cout << tl::fold(scores, 0, std::plus());
+    std::cout << tl::sum(scores);
 }
 
 void part2() {
@@ -101,7 +101,7 @@ void part2() {
 
     auto scores = tl::views::getlines(in)
         | std::views::transform(calculate_score_part2);
-    std::cout << tl::fold(scores, 0, std::plus());
+    std::cout << tl::sum(scores);
 }
 
 int main() {
