@@ -1,6 +1,7 @@
 {
     "dependencies": [
         "tl-ranges",
+        "tl-generator",
         "ctre",
         "mdspan"
     ]
